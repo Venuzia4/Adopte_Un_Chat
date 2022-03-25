@@ -1,0 +1,49 @@
+.a-propos {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  position: relative;
+  padding: 5%;
+}
+
+.a-propos h1 {
+  font-family: $textPolice;
+  font-weight: 700;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  font-size: 5vw;
+  padding-right: 5%;
+  color: white;
+}
+
+.a-propos img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nous {
+  background-color: $color-primary;
+  padding: 3em;
+  margin-top: 20vh;
+  position: relative;
+
+  p {
+    text-align: justify;
+    line-height: 1.5;
+  }
+}
+
+.nous h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.title h1 {
+  text-align: center;
+  margin-top: 5rem;
+  padding-top: 5rem;
+  color: $color-secondary;
+  font-family: $titlePolice;
+  font-size: 4rem;
+}

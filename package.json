@@ -1,0 +1,23 @@
+{
+  "name": "wild-cat",
+  "version": "1.0.0",
+  "description": "Projet 1 avec le groupe Wild Cat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MatthieuELIE/wild-cat.git"
+  },
+  "keywords": [
+    "Wild",
+    "Cat"
+  ],
+  "author": "Wild Cat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatthieuELIE/wild-cat/issues"
+  },
+  "homepage": "https://github.com/MatthieuELIE/wild-cat#readme"
+}

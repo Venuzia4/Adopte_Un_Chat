@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adopte ton chat</title>
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="assets/icon.png" type="image/png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Tienne:wght@400;700;900&family=Work+Sans:wght@100;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bcabde0407.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-------HEADER-->
+    <nav class="navbar dark-mode" role="navigation">
+      <img class="logo" src="./assets/logo.png" alt="chat dans les bras" />
+      <ul class="navbar__links">
+        <li class="navbar__link first"><a href="#apropos">A propos</a></li>
+        <li class="navbar__link second">
+          <a href="#recherche_ton_chat">Adopte ton chat</a>
+        </li>
+        <li class="navbar__link third">
+          <a href="#soutien">Soutiens ton association</a>
+        </li>
+        <li class="navbar__link fifth"><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="burger">
+        <span class="bar"></span>
+      </button>
+    </nav>
+
+    <main>
+      <section class="title">
+        <h1>Adopte un chat !</h1>
+      </section>
+
+      <section>
+        <div class="a-propos">
+          <img src="assets/Bandeau.jpg" alt="Adopte un chat" />
+          <h1>Nous aidons les associations à se faire connaitre.</h1>
+        </div>
+        <div class="nous" id="apropos">
+          <img
+            src="./assets/about.png"
+            alt="chat qui dort"
+            class="sleeping_cat"
+          />
+
+          <h2>A propos de nous</h2>
+
+          <p>
+            Nous sommes un organisme qui aide à faire connaître les associations
+            qui recueille les chats abandonnés ou errants dans la région
+            Bordelaise et ses environs. Ces associations ont besoin d’aide pour
+            pouvoir sauver un maximum de chats et aussi leur prodiguer des soins
+            adaptés. L’objectif final est l’adoption des chats par une
+            association, une vie heureuse dans un foyer aimant ! Nous agissons
+            pour la cause animale, toujours dans l’intérêt des chats. Pourquoi ?
+            Car nous les aimons et sommes particulièrement touchés par la misère
+            animale et souhaitons agir pour un traitement plus juste de leur
+            sort. Nous travaillons tant bien que mal à faire cesser la
+            prolifération des chats, nous nous battons contre leur éradication
+            et militons pour leur stérilisation.
+          </p>
+        </div>
+      </section>
+      <div id="recherche_ton_chat">
+        <!-- Div vide pour que le lien de la nav barre renvoie au dessus du titre h2. Si id="recherche_ton_chat" placée sur le h2, avec la header placé en position=fixed, le titre n'apparait pas.-->
+      </div>
+      <section class="adopt-your-cat">
+        <h2 class="adopt-section-title">Adopte ton chat !</h2>
+        <form class="search">
+          <div class="form_container">
+            <div class="search-block">
+              <label for="location"> Localisation </label>
+              <select
+                name="region"
+                id="location"
+                class="select_field"
+                required="required"
+              >
+                <option value="">Ville</option>
+                <option value="Bordeaux">Bordeaux</option>
+                <option value="Pessac">Pessac</option>
+                <option value="Talence">Talence</option>
+                <option value="Gradignan">Gradignan</option>
+                <option value="Bègles">Bègles</option>
+                <option value="Villenave d'Ornon">Villenave d'Ornon</option>
+                <option value="Floirac">Floirac</option>
+                <option value="Cenon">Cenon</option>
+                <option value="Lormont">Lormont</option>
+                <option value="Saint Médard en Jalles">
+                  Saint Médard en Jalles
+                </option>
+                <option value="Blanquefort">Blanquefort</option>
+                <option value="Eysines">Eysines</option>
+                <option value="Bruges">Bruges</option>
+                <option value="Mérignac">Mérignac</option>
+                <option value="Autre">Autre</option>
+              </select>
+            </div>
+            <div class="search-block">
+              <label for="cats-breed"> Race </label>
+              <select
+                name="cats-breed"
+                id="cats-breed"
+                class="select_field"
+                required="required"
+              >
+                <option value="">Race</option>
+                <option value="Bengale">Bengale</option>
+                <option value="Balinais">Balinais</option>
+                <option value="Chartreux">Chartreux</option>
+                <option value="Chat européen">Chat européen</option>
+                <option value="Himalayen">Himalayen</option>
+                <option value="Maine Coon">Maine Coon</option>
+                <option value="Persan">Persan</option>
+                <option value="Sacré de Birmanie">Sacré de Birmanie</option>
+                <option value="Siamois">Siamois</option>
+                <option value="Sibérien">Sibérien</option>
+                <option value="Sphynx">Sphynx</option>
+                <option value="Autre">Autre</option>
+              </select>
+            </div>
+            <div class="search-block">
+              <label for="sex"> Sexe </label>
+              <select
+                name="cats-sex"
+                id="sex"
+                class="select_field"
+                required="required"
+              >
+                <option value="">Sexe</option>
+                <option value="mâle">Mâle</option>
+                <option value="femelle">Femelle</option>
+              </select>
+            </div>
+            <div class="search-block">
+              <label for="cat-age"> Age </label>
+              <select
+                name="cats-age"
+                id="cat-age"
+                class="select_field"
+                required="required"
+              >
+                <option value="">Age</option>
+                <option value="0-1">0-1 an</option>
+                <option value="2-3">2-3 ans</option>
+                <option value="4-6">4-6 ans</option>
+                <option value="7-9">7-9 ans</option>
+                <option value="10-12">10-12 ans</option>
+                <option value="12-14">12-14 ans</option>
+                <option value="14-20">+14 ans</option>
+              </select>
+            </div>
+          </div>
+          <div class="search_buttons_block">
+            <div class="button-container-2">
+              <span class="mas">ton chat...</span>
+              <button type="submit" name="search_cats">Adopte</button>
+            </div>
+            <div class="button-container-2">
+              <span class="mas">la liste de chats...</span>
+              <button type="reset" name="reset_cats">Réinitialiser</button>
+            </div>
+          </div>
+        </form>
+
+        <div>
+          <div class="carrousel">
+            <!--Div qui contient les images du carrousel-->
+            <div class="carrousel-container"></div>
+            <!--<img src="assets/Photos-chats/Dominika.jpg" alt="chat noir et blanc couché dans un tube recouvert de tissu" class="slider-img" name="slide">-->
+            <img
+              src="assets/previous.png"
+              class="btn-g"
+              alt="fleche à gauche"
+            />
+            <img
+              src="assets/previous.png"
+              class="btn-d"
+              alt="fleche à droite"
+            />
+          </div>
+        </div>
+      </section>
+      <!---SOUTIENS TON ASSO-->
+      <section id="soutien" class="soutien-section">
+        <div class="donation">
+          <h1>Soutiens ton association</h1>
+          <div class="card don">
+            <p>
+              <strong
+                >Dépuis notre site vous pouvez soutenir l'association de votre
+                choix</strong
+              >
+            </p>
+            <form action="https://www.paypal.com/fr/home/">
+              <button id="don-charity" class="btn-don">Faire un don</button>
+            </form>
+          </div>
+          <div class="card charity">
+            <label id="label-charity" for="charity"
+              >choisissez votre association
+            </label>
+            <select name="association" id="charity">
+              <option value="">choisissez votre association</option>
+              <option value="aidAnimaux33">AidAnimaux33</option>
+              <option value="venus-association">Vénus Association</option>
+              <option value="une-pensee-feline">Une pensée féline</option>
+              <option value="sacap">S.A.C.A.P</option>
+              <option value="fondation-clara">Fondation Clara</option>
+              <option value="assistance-animaux">Assistance Animaux</option>
+            </select>
+
+            <div class="association-external-links d-none" id="aidAnimaux33">
+              <a
+                href="https://aidanimaux33.org"
+                target="_blank"
+                class="btn-charity"
+                type="submit"
+                name="Hover"
+              >
+                Devenir bénévole
+              </a>
+
+              <a
+                href="https://aidanimaux33.org"
+                target="_blank"
+                class="btn-charity"
+                type="button"
+                name="Hover"
+              >
+                Devenir famille d'accueil
+              </a>
+            </div>
+
+            <div
+              class="association-external-links d-none"
+              id="venus-association"
+            >
+              <a
+                href="https://associationvenus.fr"
+                target="_blank"
+                class="btn-charity"
+              >
+                Devenir bénévole
+              </a>
+
+              <a
+                href="https://associationvenus.fr"
+                target="_blank"
+                class="btn-charity"
+              >
+                Devenir famille d'accueil
+              </a>
+            </div>
+
+            <div
+              class="association-external-links d-none"
+              id="une-pensee-feline"
+            >
+              <a
+                href="https://www.facebook.com/100057789634269"
+                target="_blank"
+                class="btn-charity"
+              >
+                Devenir bénévole
+              </a>
+
+              <a
+                href="https://www.facebook.com/100057789634269"
+                target="_blank"
+                class="btn-charity"
+              >
+                Devenir famille d'accueil
+              </a>
+            </div>
+
+            <div class="association-external-links d-none" id="sacap">
+              <a
+                href="https://www.groupe-sacpa.fr"
+                target="_blank"
+                class="btn-charity"
+              >
+                Devenir bénévole
+              </a>
+
+              <a
+                href="https://www.groupe-sacpa.fr"
+                target="_blank"
+                class="btn-charity"
+              >
+                Devenir famille d'accueil
+              </a>
+            </div>
+
+            <div class="association-external-links d-none" id="fondation-clara">
+              <a
+                href="https://www.fondationclara.org"
+                target="_blank"
+                class="btn-charity"
+              >
+                Devenir bénévole
+              </a>
+
+              <a
+                href="https://www.fondationclara.org"
+                target="_blank"
+                class="btn-charity"
+              >
+                Devenir famille d'accueil
+              </a>
+            </div>
+
+            <div
+              class="association-external-links d-none"
+              id="assistance-animaux"
+            >
+              <a
+                href="https://www.fondationassistanceauxanimaux.org"
+                target="_blank"
+                class="btn-charity"
+              >
+                Devenir bénévole
+              </a>
+
+              <a
+                href="https://www.fondationassistanceauxanimaux.org"
+                target="_blank"
+                class="btn-charity"
+              >
+                Devenir famille d'accueil
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---CONTACT-->
+      <section id="contact" class="contact-section">
+        <h1>Contact</h1>
+        <div class="contact-container">
+          <div class="contact-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d45262.83102152766!2d-0.5760802460277471!3d44.84342123028038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sassociation%20chat!5e0!3m2!1sfr!2sfr!4v1647336289396!5m2!1sfr!2sfr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              aria-hidden="false"
+              tabindex="0 "
+            ></iframe>
+          </div>
+          <div class="contact-list">
+            <h3>Voici quelques associations ...</h3>
+            <ul>
+              <li><a href="https://aidanimaux33.org/">AidAnimaux33</a></li>
+              <li>
+                <a href="https://associationvenus.fr/">Vénus Association</a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/100057789634269/"
+                  >Une pensée féline</a
+                >
+              </li>
+              <li><a href="https://www.groupe-sacpa.fr/">S.A.C.A.P</a></li>
+              <li>
+                <a href="https://www.fondationclara.org/">Fondation Clara</a>
+              </li>
+              <li>
+                <a href="https://www.fondationassistanceauxanimaux.org/"
+                  >Assistance Animaux</a
+                >
+              </li>
+              <li>
+                <a href="https://croquette-macadam.com/"
+                  >Croquettes & Macadam</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <h2>Nous contacter :</h2>
+          <form class="form-box" id="form">
+            <input
+              type="text"
+              id="formLastName"
+              placeholder="Nom"
+              class="last-name"
+            />
+            <input
+              type="text"
+              id="formFirstName"
+              placeholder="Prénom"
+              class="first-name"
+            />
+            <input
+              type="text"
+              id="formPhone"
+              placeholder="Téléphone"
+              class="phone"
+            />
+            <input
+              type="email"
+              id="formEmail"
+              placeholder="Email"
+              class="email"
+            />
+            <textarea
+              id="formMessage"
+              class="form-message"
+              placeholder="Entrez votre message ici..."
+            ></textarea>
+          </form>
+          <button id="formButton" class="form-btn" type="submit" disabled>
+            Envoyer
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="row">
+        <div class="footer-col">
+          <div class="Cookie">
+            <p class="toto"><a class="mention" href="#">Cookies</a></p>
+            <p class="toto"><a class="mention" href="#">Mentions Légales</a></p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="cat">Copyright© wildcat 2022.</h4>
+        </div>
+        <div class="footer-col">
+          <h4>suivez-vous</h4>
+          <div class="social-media"></div>
+          <a class="titi" href="#"
+            ><i class="fa fa-twitter-square" aria-hidden="true"></i
+          ></a>
+
+          <a class="titi" href="#"
+            ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+          ></a>
+
+          <a class="titi" href="#">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="header.js"></script>
+    <script src="carrousel_button.js"></script>
+    <script src="infos-chats.js"></script>
+    <script src="form.js"></script>
+    <script src="association.js"></script>
+  </body>
+</html>
